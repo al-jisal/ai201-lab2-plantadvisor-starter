@@ -70,7 +70,7 @@ likely match for clean user input. Aliases are the broadest net, so they go last
 *Aliases are stored as a list of strings. How will you check if the normalized input matches any alias in the list? Write your approach in pseudocode or plain English.*
 
 ```
-[your answer here]
+Iterate(look) through the list, checking each element against the normalized input. Matching must be case-insensitive and tolerant of leading/trailing whitespace, so both the user's input and every stored name are passed through the same normalization step: normalize(s) = s.strip().lower().
 ```
 
 ---
@@ -80,7 +80,7 @@ likely match for clean user input. Aliases are the broadest net, so they go last
 *When a plant isn't found, the agent will read your message and use it to decide what to tell the user. Write the exact string you'll return — make it useful to the agent, not just to a human reading logs.*
 
 ```
-[your answer here]
+This plant isn't in our database. Try again with an alternate common name or alias that you know. 
 ```
 
 ---
